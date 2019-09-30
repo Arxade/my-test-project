@@ -21,7 +21,7 @@ class testCase {
 		if (undefined !== obj.executions) {
 			return obj.executions;
 		}
-		return null;
+		return false;
 	}
 }
 
