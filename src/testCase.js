@@ -20,7 +20,7 @@ class testCase {
 		var obj = JSON.parse(this.json);
 		if (undefined !== obj.executions) {
 			return obj.executions;
-			if (Array.isArray(obj.executions)){
+			if (Array.isArray(obj.executions == false)){
 				return false;
 			}
 		}
