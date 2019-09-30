@@ -18,12 +18,10 @@ class testCase {
 	// TODO but not like this : https://www.monkeyuser.com/2017/todo/
 	getExecutions(){
 		var obj = JSON.parse(this.json);
-		if (undefined !== obj.executions) {
+		if (undefined !== obj.executions && Array.isArray(obj.executions)) {
 			return obj.executions;
 		}
-		if (isArray(obj.executions) == false){
-			return false;
-		}
+
 		return false;
 	}
 }
